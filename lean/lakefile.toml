@@ -1,0 +1,10 @@
+name = "leanCoqComp"
+version = "0.1.0"
+defaultTargets = ["leancoqcomp"]
+
+[[lean_lib]]
+name = "LeanCoqComp"
+
+[[lean_exe]]
+name = "leancoqcomp"
+root = "Main"
