@@ -1,0 +1,6 @@
+DIGEST 546d309a63280ae1a3b08190ab77ac03
+Ftest
+prf 8:12 <> hello
+R16:19 Coq.Init.Logic <> True ind
+R35:35 Coq.Init.Logic <> I constr
+R35:35 Coq.Init.Logic <> I constr
