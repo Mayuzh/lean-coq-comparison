@@ -1,3 +1,6 @@
+import Mathlib.Tactic
+import Mathlib.Data.Nat.Basic
+
 inductive BTree where
   | leaf : BTree
   | node : BTree → Nat → BTree → BTree
@@ -19,7 +22,17 @@ def member (x : Nat) : BTree → Bool
 
 def exampleTree : BTree := node (node leaf 1 leaf) 2 (node leaf 3 leaf)
 
-#eval size exampleTree        -- should return 3
-#eval mirror exampleTree      -- should return mirrored tree
-#eval member 3 exampleTree    -- should return true
-#eval member 4 exampleTree    -- should return false
+#eval size exampleTree        -- 3
+#eval mirror exampleTree      -- tree
+#eval member 3 exampleTree    -- true
+#eval member 4 exampleTree    -- false
+
+theorem mirror_involutive : ∀ t : BTree, mirror (mirror t) = t := by
+  intro t
+  induction t with
+  | leaf => rfl
+  | node l v r ih_l ih_r =>
+    simp [mirror, ih_l, ih_r]
+
+#check mirror_involutive  -- Should show its type: ∀ (t : BTree), mirror (mirror t) = t
+#eval mirror (mirror exampleTree) == exampleTree  -- Should return `true`

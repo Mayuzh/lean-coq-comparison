@@ -28,3 +28,12 @@ Compute size exampleTree.       (* 3 *)
 Compute mirror exampleTree.     (* Check output tree *)
 Compute member 3 exampleTree.   (* true *)
 Compute member 4 exampleTree.   (* false *)
+
+Lemma mirror_involutive : forall t : BTree, mirror (mirror t) = t.
+Proof.
+  induction t as [| l IHl v r IHr].
+  - reflexivity.
+  - simpl. rewrite IHr, IHl. reflexivity.
+Qed.
+
+Compute (mirror (mirror exampleTree)).

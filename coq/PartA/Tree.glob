@@ -1,4 +1,4 @@
-DIGEST c3752700e98ebfc200e876977b58c09e
+DIGEST 8ab013b5eb8e09f830f066addf0b02a4
 FTree
 ind 10:14 <> BTree
 constr 28:31 <> leaf
@@ -65,9 +65,20 @@ R551:554 Tree <> leaf constr
 R558:561 Tree <> leaf constr
 R574:577 Tree <> size def
 R579:589 Tree <> exampleTree def
-R624:629 Tree <> mirror def
-R631:641 Tree <> exampleTree def
-R680:685 Tree <> member def
-R689:699 Tree <> exampleTree def
-R733:738 Tree <> member def
-R742:752 Tree <> exampleTree def
+R614:619 Tree <> mirror def
+R621:631 Tree <> exampleTree def
+R670:675 Tree <> member def
+R679:689 Tree <> exampleTree def
+R713:718 Tree <> member def
+R722:732 Tree <> exampleTree def
+prf 756:772 <> mirror_involutive
+R787:791 Tree <> BTree ind
+binder 783:783 <> t:13
+R811:813 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R794:799 Tree <> mirror def
+R802:807 Tree <> mirror def
+R809:809 Tree <> t:13 var
+R814:814 Tree <> t:13 var
+R934:939 Tree <> mirror def
+R942:947 Tree <> mirror def
+R949:959 Tree <> exampleTree def

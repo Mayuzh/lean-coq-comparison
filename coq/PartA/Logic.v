@@ -1,5 +1,3 @@
-(* Coq *)
-
 Require Import Classical.
 
 (* A /\ B -> B /\ A *)
