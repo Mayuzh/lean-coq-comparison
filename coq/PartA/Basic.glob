@@ -1,0 +1,27 @@
+DIGEST ceef8acc5f40098b586880e78c89f938
+FBasic
+R24:34 Coq.Arith.Arith <> <> lib
+prf 67:73 <> add_n_0
+R88:90 Coq.Init.Datatypes <> nat ind
+binder 84:84 <> n:1
+R98:100 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R94:96 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R93:93 Basic <> n:1 var
+R101:101 Basic <> n:1 var
+prf 245:252 <> add_comm
+R269:271 Coq.Init.Datatypes <> nat ind
+binder 263:263 <> n:2
+binder 265:265 <> m:3
+R279:281 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R275:277 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R274:274 Basic <> n:2 var
+R278:278 Basic <> m:3 var
+R283:285 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R282:282 Basic <> m:3 var
+R286:286 Basic <> n:2 var
+R357:367 Coq.Arith.PeanoNat Nat add_0_r thm
+R357:367 Coq.Arith.PeanoNat Nat add_0_r thm
+R357:367 Coq.Arith.PeanoNat Nat add_0_r thm
+R417:430 Coq.Arith.PeanoNat Nat add_succ_r thm
+R417:430 Coq.Arith.PeanoNat Nat add_succ_r thm
+R417:430 Coq.Arith.PeanoNat Nat add_succ_r thm
