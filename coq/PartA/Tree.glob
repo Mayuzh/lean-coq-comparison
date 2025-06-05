@@ -1,0 +1,73 @@
+DIGEST c3752700e98ebfc200e876977b58c09e
+FTree
+ind 10:14 <> BTree
+constr 28:31 <> leaf
+constr 43:46 <> node
+R35:39 Tree <> BTree:1 ind
+R55:58 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R50:54 Tree <> BTree:1 ind
+R62:65 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R59:61 Coq.Init.Datatypes <> nat ind
+R71:74 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R66:70 Tree <> BTree:1 ind
+R75:79 Tree <> BTree:1 ind
+scheme 10:14 <> BTree_rect
+scheme 10:14 <> BTree_ind
+scheme 10:14 <> BTree_rec
+scheme 10:14 <> BTree_sind
+def 92:97 <> mirror
+R104:108 Tree <> BTree ind
+binder 100:100 <> t:3
+R113:117 Tree <> BTree ind
+R130:130 Tree <> t:3 var
+R141:144 Tree <> leaf constr
+R149:152 Tree <> leaf constr
+R158:161 Tree <> node constr
+R172:175 Tree <> node constr
+R178:183 Tree <> mirror:4 def
+R191:196 Tree <> mirror:4 def
+def 218:221 <> size
+R228:232 Tree <> BTree ind
+binder 224:224 <> t:6
+R237:239 Coq.Init.Datatypes <> nat ind
+R252:252 Tree <> t:6 var
+R263:266 Tree <> leaf constr
+R277:280 Tree <> node constr
+R301:303 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R292:294 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R295:298 Tree <> size:7 def
+R304:307 Tree <> size:7 def
+def 328:333 <> member
+R340:342 Coq.Init.Datatypes <> nat ind
+binder 336:336 <> x:9
+R350:354 Tree <> BTree ind
+binder 346:346 <> t:10
+R359:362 Coq.Init.Datatypes <> bool ind
+R375:375 Tree <> t:10 var
+R386:389 Tree <> leaf constr
+R394:398 Coq.Init.Datatypes <> false constr
+R404:407 Tree <> node constr
+R427:433 Coq.Init.Nat <> eqb def
+R435:435 Tree <> x:9 var
+R470:473 Coq.Init.Datatypes <> ::bool_scope:x_'||'_x not
+R460:465 Tree <> member:11 def
+R467:467 Tree <> x:9 var
+R474:479 Tree <> member:11 def
+R481:481 Tree <> x:9 var
+R444:447 Coq.Init.Datatypes <> true constr
+def 504:514 <> exampleTree
+R519:522 Tree <> node constr
+R525:528 Tree <> node constr
+R530:533 Tree <> leaf constr
+R537:540 Tree <> leaf constr
+R546:549 Tree <> node constr
+R551:554 Tree <> leaf constr
+R558:561 Tree <> leaf constr
+R574:577 Tree <> size def
+R579:589 Tree <> exampleTree def
+R624:629 Tree <> mirror def
+R631:641 Tree <> exampleTree def
+R680:685 Tree <> member def
+R689:699 Tree <> exampleTree def
+R733:738 Tree <> member def
+R742:752 Tree <> exampleTree def
