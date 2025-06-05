@@ -1,0 +1,22 @@
+DIGEST 68361252bc504b5b0d4e5d23060bc03b
+FLogic
+R26:34 Coq.Logic.Classical <> <> lib
+prf 69:76 <> and_comm
+binder 87:87 <> A:1
+binder 89:89 <> B:2
+R105:108 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R100:103 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R99:99 Logic <> A:1 var
+R104:104 Logic <> B:2 var
+R110:113 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R109:109 Logic <> B:2 var
+R114:114 Logic <> A:1 var
+prf 223:237 <> not_not_implies
+binder 248:248 <> A:3
+R261:264 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R258:258 Coq.Init.Logic <> ::type_scope:'~'_x not
+R259:259 Coq.Init.Logic <> ::type_scope:'~'_x not
+R260:260 Logic <> A:3 var
+R265:265 Logic <> A:3 var
+R297:300 Coq.Logic.Classical_Prop <> NNPP thm
+R297:300 Coq.Logic.Classical_Prop <> NNPP thm
