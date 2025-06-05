@@ -1,0 +1,10 @@
+DIGEST bf2d1cf223c5f162196f00b94a8c8a88
+FTest
+R24:28 Coq.Arith.Arith <> <> lib
+prf 38:45 <> zero_add
+R60:62 Coq.Init.Datatypes <> nat ind
+binder 56:56 <> n:1
+R70:72 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R66:68 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R69:69 Test <> n:1 var
+R73:73 Test <> n:1 var
