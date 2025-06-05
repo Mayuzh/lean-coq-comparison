@@ -3,18 +3,30 @@
 This section of the project contains basic formalizations implemented in both Lean and Coq, as part of a comparative evaluation of the two proof assistants.
 
 ## Structure
-lean/
-├── PartA/
-│   ├── Arithmetic.v
-│   ├── Logic.v
-│   └── Basic.v
-coq/
-├── PartA/
-│   ├── Arithmetic.lean
-│   ├── Logic.lean
-│   └── Basic.lean
-README.md
-
+```text
+LEAN-CoQ-COMPARISON/
+├── coq/
+│   └── PartA/
+│       ├── Arithmetic.v       # Natural number proofs (add_zero, add_comm)
+│       ├── Basic.v           # First examples and experiments
+│       ├── Logic.v           # Propositional logic (and_comm, etc.)
+│       └── _CoqProject       # Coq project config file
+│
+├── lean/
+│   └── PartA/
+│       ├── Arithmetic.lean   # Natural number proofs (add_zero, add_comm)
+│       ├── Basic.lean        # First examples and experiments
+│       ├── Intro.lean        # Intro-level Lean examples and tutorial code
+│       └── Logic.lean        # Propositional logic (and_comm, etc.)
+│
+├── LeanCoqComp/              # Shared code or utilities (currently unused)
+│
+├── README.md                 # Project description and comparison writeup
+├── lakefile.lean             # Lean build setup
+├── lakefile.toml             # Lean build config
+├── lean-toolchain            # Lean version lock
+└── .github/                  # CI configuration
+```
 
 ## Contents
 
