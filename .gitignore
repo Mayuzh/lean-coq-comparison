@@ -1,3 +1,17 @@
-/.lake
-.gitignore
+# macOS system file
 .DS_Store
+
+# Lean build artifacts
+/.lake
+/.lakefile.lean
+/lake-manifest.json
+
+# Lean build output
+/build
+/.elan
+
+# VSCode settings (optional)
+.vscode/
+
+# Misc
+*.olean
