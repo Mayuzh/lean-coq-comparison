@@ -78,4 +78,67 @@ To compile individual Coq files:
 coqc Arithmetic.v
 coqc Logic.v
 coqc Tree.v
+```
+# Part B: Ecosystem Comparison – Algebra and Verification
 
+This section extends the comparison to real-world proof development styles, with a focus on algebra libraries and small-scale verification tasks in both ecosystems.
+
+## Structure
+```text
+LEAN-CoQ-COMPARISON/
+├── coq/
+│   └── PartB/
+│       ├── Algebra.v         # MathComp algebra structures: monoid, group, ring
+│       └── Verification.v    # Software Foundations-style expression evaluation
+│
+├── lean/
+│   └── PartB/
+│       ├── Algebra.lean      # Mathlib algebra structures: monoid, group, ring
+│       └── Verification.lean # Verified insertion correctness for lists
+
+```
+
+## Contents
+
+### Algebra Libraries
+
+#### Lean (Mathlib)
+
+- Algebraic structures built using typeclasses (`[Semigroup]`, `[Monoid]`, `[Group]`, `[Ring]`).
+- Very flexible inheritance and generic theorem reuse.
+- Simplified declarations and automatic inference of instances.
+- Extensive automation using tactics such as `simp`, `rw`, `linarith`, `aesop`.
+
+#### Coq (MathComp)
+
+- Algebraic hierarchy constructed with canonical structures (`monoidType`, `groupType`, `ringType`).
+- More rigid but very compositional, ensuring strict hierarchy correctness.
+- Proofs built compactly using `rewrite` and `ssreflect` idioms.
+- Automation is more lightweight but very controlled.
+
+### Small-Scale Verification
+
+#### Lean (`Verification.lean`)
+
+- Verified insertion into a sorted list (`myInsert` function).
+- Recursive definition using pattern matching.
+- Induction performed using tactic blocks (`induction`, `cases`, `split_ifs`).
+- Automation through `simp` for equality reasoning.
+
+#### Coq (`Verification.v`)
+
+- Miniature expression language (`aexp`) and evaluator (`aeval`) correctness.
+- Structural recursion via `Fixpoint`.
+- Proofs use standard `intros`, `simpl`, and `reflexivity` tactics.
+- Small correctness theorems about determinism and evaluation behavior.
+
+### Key Comparison Summary
+
+| Aspect | Lean (Mathlib) | Coq (MathComp) |
+|--------|----------------|----------------|
+| Algebra design | Typeclasses | Canonical Structures |
+| Inductive types | Pattern matching | Inductive + match |
+| Recursion | Implicit (`def`) | `Fixpoint` with annotations |
+| Tactics | `simp`, `aesop`, `linarith` | `rewrite`, `ssreflect` |
+| Verification idioms | Functional programming style | Proof engineering style |
+| Ecosystem maturity | Modern, growing | Mature, stable |

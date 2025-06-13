@@ -1,0 +1,14 @@
+DIGEST 8f5c93ac5ae3835d3d86b21edf19d215
+FAlgebra
+R29:41 mathcomp.ssreflect.all_ssreflect <> <> lib
+R43:53 mathcomp.algebra.all_algebra <> <> lib
+sec 148:162 <> AlgebraExamples
+var 175:175 AlgebraExamples R
+R179:186 mathcomp.algebra.ssralg <> ringType abbrev
+prf 272:284 <> mul1r_example
+R291:291 Algebra <> AlgebraExamples.R var
+binder 287:287 <> x:3
+R301:303 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R297:299 mathcomp.ssreflect.ssrnat <> ::nat_scope:x_'*'_x not
+R300:300 Algebra <> x:3 var
+R304:304 Algebra <> x:3 var
